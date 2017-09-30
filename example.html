@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+<div class="rte product-single__description"></div>
+<div class="test"></div>
+
+<!--<script>
+    console.log(window.location.href);
+    function httpGetAsync(theUrl, callback)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", theUrl, true); // true for asynchronous
+        xmlHttp.send(null);
+    }
+
+</script>-->
+<script type="application/javascript">
+    var ref = window.location.href;
+    document.write("<script src=http://localhost:3000/test?referrer='"+ref+"&user=user1'><\/script>");
+    </script>
+</body>
+
+</html>
